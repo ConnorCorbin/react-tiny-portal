@@ -1,5 +1,5 @@
 {
-    "name": "react-tiny-portal",
+    "name": "@corbincon/react-tiny-portal",
     "version": "1.0.0",
     "description": "A tiny React portal component safe for client and server side rendering.",
     "main": "index.js",
@@ -39,5 +39,9 @@
         "react-create-portal",
         "portal",
         "create-portal"
-    ]
+    ],
+    "bugs": {
+        "url": "https://github.com/ConnorCorbin/react-tiny-portal/issues"
+    },
+    "homepage": "https://github.com/ConnorCorbin/react-tiny-portal#readme"
 }
