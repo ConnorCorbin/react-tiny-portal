@@ -7,3 +7,6 @@ package-lock.json
 
 # Storybook
 /storybook-static
+
+# NPM
+.npmrc
