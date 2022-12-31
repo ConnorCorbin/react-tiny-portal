@@ -10,7 +10,7 @@ $ npm install --save react-tiny-portal
 
 ## Usage
 
-```ts
+```js
 import Portal from 'react-tiny-portal'
 
 const MyComponent = () => {
