@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+package-lock.json
+
+# Build
+/dist
+
+# Storybook
+/storybook-static
+
+# NPM
+.npmrc
