@@ -5,13 +5,13 @@
 ## Install
 
 ```
-$ npm install --save react-tiny-portal
+$ npm i @corbincon/react-tiny-portal
 ```
 
 ## Usage
 
 ```js
-import Portal from 'react-tiny-portal'
+import Portal from '@corbincon/react-tiny-portal'
 
 const MyComponent = () => {
     const [isOpen, setIsOpen] = useState(false)

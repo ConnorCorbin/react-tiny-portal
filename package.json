@@ -3,6 +3,7 @@
     "license": "ISC",
     "version": "1.0.0",
     "description": "A tiny React portal component safe for client and server side rendering.",
+    "sideEffects": false,
     "files": [
         "dist"
     ],
@@ -34,8 +35,8 @@
         "create-portal"
     ],
     "devDependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
+        "react": ">=16.0.0",
+        "react-dom": ">=16.0.0",
         "@babel/core": "^7.20.7",
         "@storybook/addon-actions": "^6.5.15",
         "@storybook/addon-essentials": "^6.5.15",
@@ -52,7 +53,7 @@
         "vite": "^4.0.4"
     },
     "peerDependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react": ">=16.0.0",
+        "react-dom": ">=16.0.0"
     }
 }
