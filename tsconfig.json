@@ -3,12 +3,13 @@
     "exclude": ["dist", "node_modules", "**/*.stories.tsx"],
     "compilerOptions": {
         "module": "esnext",
-        "lib": ["dom", "esnext"],
+        "target": "es6",
+        "lib": ["dom", "dom.iterable", "esnext"],
         "importHelpers": true,
         "declaration": true,
         "sourceMap": true,
         "rootDir": "./src",
-        "outDir": "./dist/",
+        "outDir": "./dist",
         "strict": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
@@ -18,6 +19,13 @@
         "jsx": "react-jsx",
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "allowJs": false,
+        "useDefineForClassFields": true,
+        "allowSyntheticDefaultImports": true,
+        "noEmit": false,
+        "emitDeclarationOnly": true,
+        "types": ["vite/client"]
     }
 }

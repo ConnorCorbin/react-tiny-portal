@@ -1,12 +1,22 @@
 {
-    "name": "@connorcorbin/react-tiny-portal",
-    "version": "1.0.2",
+    "name": "@corbincon/react-tiny-portal",
+    "license": "ISC",
+    "version": "1.0.0",
     "description": "A tiny React portal component safe for client and server side rendering.",
-    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.umd.cjs",
+    "module": "./dist/index.mjs",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.umd.cjs"
+        }
+    },
     "scripts": {
-        "build": "tsc",
-        "prepare": "npm run build",
+        "build": "vite build && tsc",
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
@@ -15,8 +25,14 @@
         "type": "git",
         "url": "git+https://github.com/ConnorCorbin/react-tiny-portal.git"
     },
-    "author": "Connor Corbin",
-    "license": "ISC",
+    "keywords": [
+        "react",
+        "react-portal",
+        "react-portal-component",
+        "react-create-portal",
+        "portal",
+        "create-portal"
+    ],
     "devDependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -32,18 +48,11 @@
         "@types/react-dom": "^18.0.10",
         "babel-loader": "^8.3.0",
         "prettier": "2.8.1",
-        "typescript": "^4.9.4"
+        "typescript": "^4.9.4",
+        "vite": "^4.0.4"
     },
-    "keywords": [
-        "react",
-        "react-portal",
-        "react-portal-component",
-        "react-create-portal",
-        "portal",
-        "create-portal"
-    ],
-    "bugs": {
-        "url": "https://github.com/ConnorCorbin/react-tiny-portal/issues"
-    },
-    "homepage": "https://github.com/ConnorCorbin/react-tiny-portal#readme"
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
 }
